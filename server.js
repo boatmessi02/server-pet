@@ -6,7 +6,7 @@ const cors = require("cors");
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://main.d1bo3xzcw5iy7y.amplifyapp.com",
     methods: ["GET", "POST", "DELETE","PUT"],
     credentials: true,
   })
@@ -24,7 +24,7 @@ mongoose
   )
   .then(() => {
     console.log("connecting to Mongodb");
-    app.listen(3001, () => {
+    app.listen('https://server-pet.onrender.com', () => {
       console.log("Node api app is running 3001");
     });
   })
