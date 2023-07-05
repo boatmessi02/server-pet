@@ -6,7 +6,7 @@ const cors = require("cors");
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://clever-dolphin-a20e67.netlify.app/",
     methods: ["GET", "POST", "DELETE","PUT"],
     credentials: true,
   })
